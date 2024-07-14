@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="assets/icon.ico">
+  <title>ToDo</title>  
+  <link href="assets/Lista3/lista3.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <a href="index.html"><i class="fas fa-home"></i></a>
+  <form id="form">
+    <h2>Shopping List</h2>
+    <div class="input-container">
+    <input type="text" id="nomeOuCodigo" placeholder="Item's name or Barcode" required />
+    <input type="text" id="preco" placeholder="Price(0.00)" required />
+    <input type="text" id="quantidade" placeholder="Quantity" required />
+    <button type="submit">Add</button>
+    </div>
+  </form>
+  <table class="Shopping-list">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Cost</th>
+        <th>Qty</th>
+        <th>($)</th>
+        <th>Checked</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="lista"></tbody>
+  </table>
+  <footer>
+    <ul>
+        <li>Developed by Larissa Saraiva</li>
+        <li>|</li>
+        <li>
+            <a href="https://github.com/lassaraiva" target="_blank" style="margin: 0 5px;"><i class="fab fa-github footer-icon"></i></a>
+            <a href="https://www.linkedin.com/in/lassaraiva/" target="_blank" style="margin: 0 5px;"><i class="fab fa-linkedin footer-icon"></i></a>
+        </li>
+    </ul>
+</footer>
+  <script src="assets/Lista3/lista3.js"></script>
+</body>
+</html>

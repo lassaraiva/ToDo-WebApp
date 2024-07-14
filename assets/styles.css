@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+:root {
+    --font-family:  "Quicksand", sans-serif;
+    --background-color: #9c914b;
+    --background-img-body: url("https://www.transparenttextures.com/patterns/notebook.png");
+    --container-margin-top: 2rem;
+    --logo-max-width: 40%;
+    --blocks-gap: 2rem;
+    --blocks-margin-top: 2rem;
+    --block-width: 12.5rem;
+    --block-height: 9.375rem;
+    --block-font-color: rgb(20, 18, 18);
+    --block-font-weight: 600;
+    --block-font-size: 1.5rem;
+    --block-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+    --block-bg-img: url("https://www.transparenttextures.com/patterns/rice-paper-2.png");
+    --block-padding: 0.9375rem;
+    --block-yellow-bg: #fff740;
+    --block-red-bg: #ff4040;
+    --block-blue-bg: #4093ff;
+    --block1-bg: #feff9c;
+    --block2-bg: #ff9c9c;
+    --block3-bg: #9cc4ff;
+    --block1-hover-bg: #f1dc4d;
+    --block2-hover-bg: #ec4641;
+    --block3-hover-bg: #5fa4e6;
+    --footer-color: rgb(85, 84, 84);
+    --footer-padding: 0.625rem 0;
+    --footer-margin: 0 0.3125rem;
+    --animation-duration: 0.5s;
+    --animation-jump-ease: ease;
+    --transition-duration: 0.3s;
+    --transition-hover-opacity: 0.7;
+    --transition-hover-scale: 1.009;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    height: 100vh;
+    background-color: var(--background-color);
+    background-image: var(--background-img-body);
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: var(--container-margin-top);
+    flex: 1;
+  }
+  
+  .logo img {
+    max-width: var(--logo-max-width);
+    height: auto;
+  }
+  
+  .blocks {
+    display: flex;
+    justify-content: center;
+    gap: var(--blocks-gap);
+    margin-top: var(--blocks-margin-top);
+  }
+  
+  .block1, .block2, .block3 {
+    width: var(--block-width);
+    height: var(--block-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--block-font-color);
+    font-weight: var(--block-font-weight);
+    font-size: var(--block-font-size);
+    cursor: pointer;
+    transition: background-color var(--transition-duration), transform var(--transition-duration), box-shadow var(--transition-duration);
+    animation: jump var(--animation-duration) var(--animation-jump-ease) forwards;
+    box-shadow: var(--block-box-shadow);
+    background-image: var(--block-bg-img);
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(1.25rem);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-0.625rem);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .block.yellow .header {
+    padding: var(--block-padding);
+    background-color: var(--block-yellow-bg);
+  }
+  .block.red .header {
+    padding: var(--block-padding);
+    background-color: var(--block-red-bg);
+  }
+  .block.blue .header {
+    padding: var(--block-padding);
+    background-color: var(--block-blue-bg);
+  }
+  
+  .block1 {
+    background-color: var(--block1-bg);
+  }
+  
+  .block2 {
+    background-color: var(--block2-bg);
+  }
+  
+  .block3 {
+    background-color: var(--block3-bg);
+  }
+  
+  .block1:hover {
+    background-color: var(--block1-hover-bg);
+  }
+  .block2:hover {
+    background-color: var(--block2-hover-bg);
+  }
+  .block3:hover {
+    background-color: var(--block3-hover-bg);
+  }
+  
+  footer {
+    text-align: center;
+    color: var(--footer-color);
+    padding: var(--footer-padding);
+    font-weight: var(--block-font-weight);
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  footer ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  
+  footer li {
+    margin: var(--footer-margin);
+  }
+  
+  footer a {
+    text-decoration: none;
+    transition: all 0.15ms;
+  }
+  
+  footer a:hover {
+    opacity: var(--transition-hover-opacity);
+    transform: scale(var(--transition-hover-scale));
+    cursor: pointer;
+  }
+  
+  @media (max-width: 80rem) {
+    .container {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .logo img {
+        max-width: 80%;
+        height: auto;
+    }
+    .blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block1, .block2, .block3 {
+        margin-bottom: 20px; 
+        width: 13rem;
+        height: 13rem;
+        font-size: 1.6rem;
+    }
+}

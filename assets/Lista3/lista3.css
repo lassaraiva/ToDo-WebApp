@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #9c914b;
+  --icon-h2-table: rgb(8, 126, 223);
+  --add-button: rgb(37, 114, 173);
+  --hover-icon-button: rgb(8, 103, 175);
+  --placeholer: #999;
+  --inputcolor-textbtn: rgb(247, 246, 246);
+  --font-family:  "Quicksand", sans-serif;
+  --text-tablebtn: rgb(216, 6, 163);
+  --border-tablebtn: 0.2rem solid rgb(216, 6, 163);
+  --deletbtn-color: rgb(250, 70, 100);
+  --deletbtn-hover: rgb(245, 29, 65);
+  --th-color: #177edf;
+  --table-color: rgb(255, 255, 255);
+  --footer-color: rgb(85, 84, 84);
+  --background-img: url("https://www.transparenttextures.com/patterns/notebook.png");
+  --background-img-th: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  --font-size-h2: 5rem;
+  --font-size-a: 5rem;
+  --padding-body: 5% 1.5rem;
+  --margin-h2-bottom: 2rem;
+  --container-max-width: 70rem;
+  --container-margin: 2rem auto;
+  --container-padding: 3rem;
+  --container-border-radius: 3rem;
+  --container-box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  --input-width: calc(100% - 1rem);
+  --input-padding: 1.5rem;
+  --input-margin-bottom: 1.5rem;
+  --input-border-radius: 2rem;
+  --input-font-size: 1.6rem;
+  --button-font-size: 2.3rem;
+  --button-padding: 0.6rem 1.2rem;
+  --button-width: calc(30% - 1rem);
+  --done-delete-button-width: 4rem;
+  --done-delete-button-height: 4rem;
+  --done-delete-button-padding: 0.3rem;
+  --table-border-radius: 3rem;
+  --table-margin: 2rem 0;
+  --th-td-padding: 1.2rem;
+  --th-padding: 1.5rem;
+  --font-size-td: 2.2rem;
+  --font-size-th-td: 2rem;
+  --footer-padding: 10px 0;
+  --footer-font-size: 1.5rem;
+  --footer-icon-size: 2rem;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  background-image: var(--background-img);
+  margin: 0;
+  padding: var(--padding-body);
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--icon-h2-table);
+  font-weight: bold;
+  display: flex;
+  font-size: var(--font-size-a);
+  margin-left: 32vw;
+  padding: 0;
+}
+
+a:hover {
+  color: var(--hover-icon-button);
+}
+
+h2 {
+  text-align: center;
+  font-size: var(--font-size-h2);
+  color: var(--icon-h2-table);
+  margin-bottom: var(--margin-h2-bottom);
+}
+
+form {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: var(--container-margin);
+  border: 0.2rem solid var(--icon-h2-table);
+  padding: var(--container-padding);
+  border-radius: var(--container-border-radius);
+  box-shadow: var(--container-box-shadow);
+  box-sizing: border-box;
+}
+input[type="text"] {
+  width: var(--input-width);
+  padding: var(--input-padding);
+  margin-bottom: var(--input-margin-bottom);
+  background-color: var(--inputcolor-textbtn);
+  border: 0.1rem solid var(--icon-h2-table);
+  border-radius: var(--input-border-radius);
+  font-size: var(--input-font-size);
+  box-sizing: border-box;
+}
+
+
+input::placeholder {
+  color: var(--placeholer);
+}
+
+button {
+  background-color: var(--add-button);
+  font-family: var(--font-family);
+  color: var(--inputcolor-textbtn);
+  font-size: var(--button-font-size);
+  font-weight: bold;
+  padding: var(--button-padding);
+  border: none;
+  border-radius: var(--input-border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: var(--button-width);
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: var(--hover-icon-button);
+}
+.done-Button, .remover-button {
+  width: var(--done-delete-button-width);
+  height: var(--done-delete-button-height);
+  padding: var(--done-delete-button-padding);
+  color: var(--text-tablebtn);
+  border: var(--border-tablebtn);
+}
+.remover-button {
+  background-color: var(--deletbtn-color);
+}
+
+.remover-button:hover {
+  background-color: var(--deletbtn-hover);
+}
+.Shopping-list {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--container-box-shadow);
+}
+table {
+  border: 0.2rem solid var(--icon-h2-table);
+  width: 100%;
+  margin: var(--table-margin);
+  border-radius: var(--table-border-radius);
+  box-sizing: border-box;
+}
+
+th, td {
+  padding: var(--th-td-padding);
+  text-align: center;
+  font-size: var(--font-size-th-td);
+  border: 0.2rem solid var(--icon-h2-table);
+}
+
+td {
+  font-size: var(--font-size-td);
+}
+
+th {
+  border: none;
+  padding: var(--th-padding);
+  background-color: var(--th-color);
+  background-image: var(--background-img-th);
+}
+
+tr:nth-child(odd), tr:nth-child(even), th {
+  color: var(--table-color);
+}
+
+footer {
+  text-align: center;
+  font-size: var(--footer-font-size);
+  color: var(--footer-color);
+  padding: var(--footer-padding);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex; 
+  align-items: center;
+  padding: 0; 
+}
+
+footer li {
+  margin: 0 5px;
+  display: flex;
+}
+
+.footer-icon {
+  font-size: var(--footer-icon-size);
+  text-decoration: none;
+  transition: all 0.15ms;
+}
+
+@media (max-width: 80rem) {
+  body {
+      padding: 5% 2%;
+  }
+  button {
+    width: 40%;
+    padding: 0.6rem;
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+.remover-button, .done-Button {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.1rem;
+  }
+  form {
+      padding: 15px;
+  }
+  table {
+    margin-left: -0.5rem;
+  }
+
+  th{
+    padding: 0.6rem;
+    font-size: 1.6rem;
+  }
+  td {
+    padding: 0.2rem;
+    font-size: 1.7rem;
+    font-weight:500;
+  }
+  a {
+    font-size: 4rem;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 390px){
+  th{
+    padding: 0.2rem;
+    font-size: 1.6rem;
+  }
+  td {
+    padding: 0.2rem;
+    font-size: 1.5rem;
+  }
+}

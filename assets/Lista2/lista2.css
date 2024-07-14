@@ -1,0 +1,132 @@
+:root {
+  --background-color: #9c914b;
+  --icon-h2-table: rgb(196, 10, 10);
+  --add-button: rgb(221, 40, 40);
+  --hover-icon-button: rgb(158, 9, 9);
+  --placeholer: #999;
+  --inputcolor-textbtn: rgb(247, 246, 246);
+  --font-family:  "Quicksand", sans-serif;
+  --text-tablebtn: rgb(91, 4, 112);
+  --border-tablebtn: 0.2rem solid rgb(91, 4, 112);
+  --deletbtn-color:  rgb(248, 11, 11);
+  --deletbtn-hover: rgb(179, 7, 16);
+  --donebtn-color: rgb(221, 207, 3);
+  --donebtn-hover: rgb(168, 157, 4);
+  --th-color: #dd0b0b;
+  --table-color: rgb(255, 255, 255);
+  --footer-color: rgb(85, 84, 84);
+  --background-img: url("https://www.transparenttextures.com/patterns/notebook.png");
+  --background-img-th: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  --font-size-h2: 5rem;
+  --font-size-a: 5rem;
+  --padding-body: 5% 1.5rem;
+  --margin-h2-bottom: 2rem;
+  --container-max-width: 70rem;
+  --container-margin: 2rem auto;
+  --container-padding: 3rem;
+  --container-border-radius: 3rem;
+  --container-box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  --input-width: calc(50% - 1rem);
+  --input-padding: 1.5rem;
+  --input-margin-bottom: 1.5rem;
+  --input-border-radius: 2.5rem;
+  --input-font-size: 1.6rem;
+  --button-font-size: 2.3rem;
+  --button-padding: 0.6rem 1.2rem;
+  --button-width: calc(30% - 1rem);
+  --done-delete-button-width: 4rem;
+  --done-delete-button-height: 4rem;
+  --done-delete-button-padding: 0.3rem;
+  --table-border-radius: 3rem;
+  --table-margin: 2rem 0;
+  --th-td-padding: 1.2rem;
+  --th-padding: 1.5rem;
+  --font-size-td: 2.2rem;
+  --font-size-th-td: 2rem;
+  --footer-padding: 10px 0;
+  --footer-font-size: 1.5rem;
+  --footer-icon-size: 2rem;
+}
+.name-input,.data-hora-input {
+  width: var(--input-width);
+  padding: var(--input-padding);
+  margin-bottom: var(--input-margin-bottom);
+  background-color: var(--inputcolor-textbtn);
+  border: 0.1rem solid var(--icon-h2-table);
+  border-radius: var(--input-border-radius);
+  font-size: var(--input-font-size);
+  box-sizing: border-box;
+}
+.doneButton, .deleteButton {
+  width: var(--done-delete-button-width);
+  height: var(--done-delete-button-height);
+  padding: var(--done-delete-button-padding);
+  color: var(--text-tablebtn);
+  border: var(--border-tablebtn);
+}
+.deleteButton {
+  background-color: var(--deletbtn-color);
+}
+
+.deleteButton:hover {
+  background-color: var(--deletbtn-hover);
+}
+.doneButton{
+  background-color: var(--donebtn-color);
+}
+.doneButton:hover {
+  background-color: var(--donebtn-hover);
+}
+@media (max-width: 80rem) {
+  body {
+    padding: 5rem 2rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+
+  .container {
+    padding: 2rem;
+    width: 140%;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  
+  .name-input, .data-hora-input {
+    padding: 1.2rem;
+    font-size: 2rem;
+  }
+
+  button {
+    width: 40%;
+    padding: 0.6rem;
+  }
+
+  th {
+    margin-left: -1rem;
+    padding: 0.6rem;
+    font-size: 2rem;
+  }
+  
+  td {
+    margin-left: -1rem;
+    padding: 0.4rem;
+    font-size: 2rem;
+    font-weight:500;
+  }
+    a {
+      font-size: 5rem;
+     margin-bottom: 3rem;
+    }
+}
+@media (max-width: 390px){
+  th{
+    padding: 0.6rem;
+    font-size: 1.8rem;
+  }
+  td {
+    padding: 0.4rem;
+    font-size: 1.8rem;
+  }
+}

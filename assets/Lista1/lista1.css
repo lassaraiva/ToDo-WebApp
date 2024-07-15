@@ -45,7 +45,7 @@
   --th-td-padding: 1.2rem;
   --th-padding: 1.5rem;
   --font-size-td: 2.2rem;
-  --font-size-th-td: 2rem;
+  --font-size-th-td: 2.2rem;
   --footer-padding: 10px 0;
   --footer-font-size: 1.5rem;
   --footer-icon-size: 2rem;
@@ -227,7 +227,8 @@ footer li {
   }
 
   h2 {
-    font-size: 4rem;
+    margin-top: 3rem;
+    font-size: 4.5rem;
   }
 
   .container {
@@ -236,8 +237,8 @@ footer li {
   }
 
   .delete-toDo-button, .done-Button {
-    width: 3rem;
-    height: 3rem;
+    width: 3.7rem;
+    height: 3.7rem;
     padding: 0.1rem;
   }
 
@@ -254,7 +255,7 @@ footer li {
 
   th {
     padding: 1.2rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   td {
